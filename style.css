@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap');
+@media (max-width:450) {
+   html {
+      font-size: 50%;
+    }
+}
+@media (max-width:768px) {
+   nav .wrapper {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+   }
+   
+   nav ul li a {
+      display: block;
+   }
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none; border: none;
+    text-transform: capitalize;
+ }
+
+ html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+ }
+
+ body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+ }
+
+ header {
+   position: fixed;
+   top: 0; left: 0;
+   width: 100%;
+   background: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 1000; 
+ }
+
+ section {
+   margin: auto;
+   padding-top: 7.5rem;
+   padding: 0 9%;
+   position: relative;
+}
+
+ .wrapper {
+    width: 1100px;
+    height: 60px;
+    margin: auto;
+    position: relative;
+ }
+
+ .logo a {
+    font-size: 30px;
+    float: left;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    color: white;
+ }
+
+ .menu {
+    float: right;
+ }
+
+ nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 60px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #1E1E1E;
+ }
+
+ nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+ }
+
+ nav ul li {
+    float: left;
+ }
+
+ nav ul li a {
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+ }
+ 
+ nav ul li a:hover {
+   text-decoration: underline;
+ }
+
+.tbl {
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    background-size: 200%;
+    transition: 1s;
+}
+
+.tbl {
+    background-image: linear-gradient(to left, #1F90FB, #C105D2, #1F90FB);
+}
+
+.tbl:hover {
+    background-position: right;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.home {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: url("image/mburi.png") no-repeat;
+   background-size: cover;
+   background-position-y: bottom;
+}
+
+.home .gambar img {
+   width: 40vw;
+   animation: float 3s linear infinite;
+   padding-top: 50px;
+}
+
+@keyframes float {
+   0%, 100%{
+      transform: translateY(0rem);
+   }
+   50%{
+      transform: translateY(-2rem);
+   }
+}
+
+.home .kolom h1 {
+   font-size: 70px;
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   justify-content: left;
+   text-align: left;
+   background-color: #1E1E1E;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   padding-bottom: 5px;
+}
+
+.home .kolom h4 {
+   font-size: 30px;
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
+   font-weight: 800;
+   line-height: 60px;
+   text-align: left;
+}
+
+.home .kolom p {
+   font-size: 16px;
+   font-family: 'Inter', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 20px;
+   text-align: left;
+   padding-bottom: 40px;
+}
+
+.btn {
+   font-family: 'Inter', sans-serif;
+   font-size: small;
+   border: none;
+   padding: 15px;
+   border-radius: 15px;
+   cursor: pointer;
+   color: white;
+   background-size: 200%;
+   transition: 1s;
+   width: 200px;
+   height: 20px;
+   text-align: center;
+   position: absolute;
+}
+
+.btn {
+   background-image: linear-gradient(to left, #1F90FB, #C105D2, #1F90FB);
+}
+
+.btn:hover {
+   background-position: right;
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+   padding: 50px 0px 50px 0px;
+   background-color: #1E1E1E;
+}
+
+section h3 {
+   font-size: 30px;
+}
+
+section h3::after {
+   content: "";
+   border-bottom: 5px solid #C105D2;
+   width: 100px;
+   display: block;
+   margin: 20px auto;
+}
+
+.feature {
+   text-align: center;
+   margin: auto;
+   padding-top: 50px;
+}
+
+section h3 {
+   font-family: 'Inter', sans-serif;
+   font-size: 40px;
+   color: #fff;
+}
+
+section p.ringkasan {
+   font-family: 'Inter', sans-serif;
+   font-weight: small;
+   font-size: 18px;
+   color: #fff;
+   text-align: center;
+   letter-spacing: 3px;
+}
+
+.feature .layar-dalam p {
+   line-height: 30px;
+   padding-bottom: 50px;
+}
+
+section p1.deskripsi {
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   font-size: 10px;
+   color: #fff;
+   text-align: center;
+   letter-spacing: 1px;
+}
+
+.feature .layar-dalam p1 {
+   justify-content: center;
+   line-height: 25px;
+}
+
+.readmore {
+   font-size: 20px;
+   float: center;
+   font-weight: 800;
+   font-family: 'Inter', sans-serif;
+   color: white;
+   padding-top: 40px;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 50px;
+ }
+ 
+ .heading {
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    border: none;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-size: 200%;
+ }
+ 
+ .heading {
+    background-color: #1E1E1E;
+ }
+ 
+ .desain .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 40px;
+    padding-top: 50px;
+ }
+ 
+ .desain .box-container .box {
+    flex: 1 1 30rem;
+    background: #1E1E1E;
+    border: 5px solid #1E1E1E;
+    width: 320px;
+    height: 470px;
+    margin: 10px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+ }
+ 
+ .desain .box-container .box img {
+    height: 15rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+ }
+ 
+ .desain .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 40px;
+ }
+ 
+ .desain .box-container .box h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    background-size: 200%;
+ }
+ 
+ .desain .box-container .box h3 {
+    background: #fff;
+ }
+ 
+ .desain .box-container .box p {
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    font-size: 10px;
+    color: #fff;
+    padding-top: 30px;
+    padding-left: 10px;
+    line-height: 20px;
+    text-align: left;
+ }
+ 
+ .bayar{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding:25px;
+    min-height: 100vh;
+    padding-bottom: 100px;
+    padding-top: 70px;
+  }
+  
+  .bayar form{
+    padding:20px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bayar form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .bayar form .row .col{
+    flex:1 1 250px;
+  }
+  
+  .bayar form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .bayar form .row .col .inputBox{
+    margin:15px 0;
+  }
+  
+  .bayar form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .bayar form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 1px;
+    font-size: 13px;
+    text-transform: none;
+  }
+  
+  .bayar form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .bayar form .row .col .flex{
+    display: flex;
+    gap:15px;
+  }
+  
+  .bayar form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .bayar form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+ 
+  .cek {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 50px;
+ }
+ 
+ .cek {
+    font-family: 'Inter', sans-serif;
+    font-size: small;
+    border: none;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-size: 200%;
+    transition: 1s;
+ }
+ 
+ .cek {
+    background-color: #1E1E1E;
+ }
+ 
+  .cek:hover {
+    background-position: right;
+    text-decoration: none;
+ }
